@@ -9,20 +9,16 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-size: 20px;
-}
-
-body {
-  overflow: hidden;
+  font-size: 16px;
 }
 
 main {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   background-color: black;
   display: grid;
   grid-template-columns: 22fr 20fr 7fr 27fr 22fr;
-  grid-template-rows: 27fr 26fr 7fr 18fr 22fr;
+  grid-template-rows: 0.1fr 0.2fr 0.6fr 0.2fr 0.2fr;
 
   grid-template-areas:
     "leftTop topCenter1 topCenter1 topCenter2 rightTop"
@@ -38,7 +34,7 @@ main {
   grid-area: leftTop;
   background-color: #fbe4e5;
   border: 2px solid rgb(13, 12, 12);
-  padding: 20px;
+  padding: 15px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -92,7 +88,7 @@ main {
   grid-area: leftBottom;
   background-color: #1f1f1f;
   border: 2px solid white;
-  padding: 20px;
+  padding: 15px;
   border-radius: 20px;
   color: white;
   display: flex;
@@ -163,7 +159,7 @@ main {
   grid-area: topCenter1;
   background-color: rgb(243, 243, 236);
   border: 2px solid white;
-  padding: 20px;
+  padding: 15px;
   border-radius: 20px;
 }
 
@@ -216,7 +212,7 @@ main {
   grid-area: topCenter2;
   background-color: rgb(243, 243, 236);
   border: 2px solid white;
-  padding: 20px;
+  padding: 15px;
   border-radius: 20px;
 }
 
@@ -295,9 +291,11 @@ main {
 .center img {
   position: absolute;
   bottom: 0;
-  height: 280px;
+  max-height: 280px;
+  width: auto;
   z-index: 2;
 }
+
 /* TOP LEFT CARD  */
 .graph {
   margin-top: 10px;
@@ -349,7 +347,7 @@ main {
   bottom: 10%;
   background-color: white;
   border-radius: 60px;
-  padding: 14px 30px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -368,11 +366,11 @@ main {
 }
 .play-btn i {
   color: white;
-  font-size: 26px;
+  font-size: 18px;
 }
 
 .play-card h3 {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .play-card p {
@@ -390,7 +388,7 @@ main {
 }
 /* ENGAGEMENT CARD */
 .center .engagementCard {
-  width: 165px;
+  width: 135px;
   right: 11%;
   bottom: 0%;
 }
@@ -443,7 +441,7 @@ main {
   grid-area: bottomCenter1;
   background-color: #fdf6f7;
   border: 2px solid white;
-  padding: 20px;
+  padding: 15px;
   border-radius: 20px;
 }
 
@@ -544,16 +542,16 @@ main {
   border: 2px solid white;
 
   border-radius: 20px;
-  padding: 20px;
+  padding: 15px;
 }
 
 .rightTop h4 {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
 .rightTop-mid {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 }
@@ -576,7 +574,7 @@ main {
 
 .rightTop p {
   font-size: 10px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .rightTop h3 {
